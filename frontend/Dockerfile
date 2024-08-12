@@ -26,6 +26,6 @@ COPY package.json .
 COPY --from=deps usr/src/app/node_modules ./node_modules
 COPY --from=build usr/src/app/.svelte-kit ./.svelte-kit
 
-EXPOSE 3000
+EXPOSE 5173
 
 CMD ["npm", "run", "dev"]
