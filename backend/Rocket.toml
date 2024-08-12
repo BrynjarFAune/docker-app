@@ -1,0 +1,2 @@
+[default.databases.mysql_db]
+url = "mysql://root:my_secret_pw@db:3306/mydb"
