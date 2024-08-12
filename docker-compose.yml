@@ -4,9 +4,11 @@ services:
     build:
       context: ./backend
     ports:
-      - "8000:8000"
+      - "8000:8080"
     depends_on:
       - db
+    networks:
+      - my-network
     environment:
       PMA_HOST: db
       PMA_PORT: 3306
@@ -25,3 +27,8 @@ services:
       MYSQL_DATABASE: mydb
     ports:
       - "3307:3306"
+    networks:
+      - my-network
+
+networks:
+  my-network:
