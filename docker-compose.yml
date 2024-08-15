@@ -4,9 +4,7 @@ services:
     build:
       context: ./backend
     ports:
-      - "8000:8080"
-    depends_on:
-      - db
+      - "8080:8080"
     networks:
       - my-network
     environment:
@@ -19,6 +17,8 @@ services:
       context: ./frontend
     ports:
       - "3000:3000"
+    networks:
+      - my-network
 
   db:
     image: mysql:latest
