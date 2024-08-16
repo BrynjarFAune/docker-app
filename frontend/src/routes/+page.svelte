@@ -1,18 +1,16 @@
 <script lang="ts">
-	import Counter from './Counter.svelte';
 	import { onMount } from 'svelte';
 
-	interface Data {
-		name: string;
-		// add other fields as necessary
-	}
-
-	let data: Data | null = null;
+	let data: any = null;
+	let error: string | null = null;
 
 	onMount(async () => {
-		const response = await fetch('backend:8080/');
-		if (response.ok) {
-			data = (await response.json()) as Data;
+		try {
+			const res = await fetch('http://backend:8000/');
+			data = await res.json();
+			console.log(data);
+		} catch (err) {
+			error = 'Failed to load data';
 		}
 	});
 </script>
@@ -24,11 +22,12 @@
 
 <section>
 	<h1 class="welcome">Welcome to Brynjar's page!</h1>
-
-	<Counter />
 </section>
 <section>
-	{#if data}
+	<h1>Data section:</h1>
+	{#if error}
+		<p class="err">{error}</p>
+	{:else if data}
 		<div>
 			<h1>Data</h1>
 			<pre>{JSON.stringify(data, null, 2)}</pre>
