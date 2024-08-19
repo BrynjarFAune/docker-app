@@ -1,18 +1,15 @@
-FROM rust:1.80.0
-
-ENV ROCKET_ADDRESS=0.0.0.0
-ENV ROCKET_PORT=8080
-
-WORKDIR /src
+FROM rust:nightly AS build
+WORKDIR /app
 
 COPY . .
+RUN cargo build --release
 
+FROM alpine:3.18
+WORKDIR /app
+
+COPY --from=build /app/target/release/backend /usr/local/bin/backend
+
+ENV ROCKET_ADDRESS=0.0.0.0
 EXPOSE 8080
-
-# Install ping
-RUN apt-get update && apt-get install -y iputils-ping
-
-RUN rustup default stable
-RUN cargo build
 
 CMD ["cargo", "run"]

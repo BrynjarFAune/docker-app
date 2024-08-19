@@ -1,0 +1,10 @@
+C:\Users\brynjar.aune\Proj\other\notes-app\backend\target\debug\deps\libcookie-e19ddca02cb51780.rmeta: C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\lib.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\builder.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\parse.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\jar.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\delta.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\draft.rs
+
+C:\Users\brynjar.aune\Proj\other\notes-app\backend\target\debug\deps\cookie-e19ddca02cb51780.d: C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\lib.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\builder.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\parse.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\jar.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\delta.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\draft.rs
+
+C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\lib.rs:
+C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\builder.rs:
+C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\parse.rs:
+C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\jar.rs:
+C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\delta.rs:
+C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cookie-0.11.5\src\draft.rs:

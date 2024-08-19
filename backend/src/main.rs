@@ -1,8 +1,8 @@
-#[macro_use] extern crate rocket;
-use rocker_contrib::json::Json;
+#[macro_use]
+extern crate rocket;
+use rocket::serde::json::Json;
+use rocket_cors::{AllowedOrigins, CorsOptions};
 use serde::Serialize;
-use rocket_cors::{AllowedHeaders, AllowedOrigins, CorsOptions};
-
 
 #[derive(Serialize)]
 struct Response {
@@ -11,16 +11,16 @@ struct Response {
 
 #[get("/")]
 async fn index() -> Json<Response> {
-/*    let result: Result<String, _> = conn.run(|c| {
-        c.query_first("SELECT NOW()")
+    /*    let result: Result<String, _> = conn.run(|c| {
+    c.query_first("SELECT NOW()")
     }).await;
 
     match result {
-        Ok(Some(time)) => format!("Current time: {}", time),
-        Ok(None) => "No result".to_string(),
-        Err(_) => "Query failed".to_string(),
+    Ok(Some(time)) => format!("Current time: {}", time),
+    Ok(None) => "No result".to_string(),
+    Err(_) => "Query failed".to_string(),
     }
-*/
+    */
     let response = Response {
         message: "Backend connected!".to_string(),
     };
@@ -28,27 +28,14 @@ async fn index() -> Json<Response> {
     Json(response)
 }
 
-#[get("/hello/<name>")]
-async fn hello(name: &str) -> String {
-    format!("Hello, {name}")
-}
-
 #[launch]
-fn rocket() -> _{
+fn rocket() -> _ {
     let cors = CorsOptions {
-        allowed_origins: AllowedOrigins::all(),
-        allowed_headers: AllowedHeaders::some(&[
-            "Authorization",
-            "Accept",
-            "Content-Type",
-        ]),
+        allowed_origins: rocket_cors::AllowedOrigins::all(),
         ..Default::default()
     }
     .to_cors()
-    .expect("CORS config failed");
+    .unwrap();
 
-    rocket::build()
-        .attach(cors)
-        .mount("/", routes![index])
-        .mount("/", routes![hello])
+    rocket::build().attach(cors).mount("/", routes![index])
 }

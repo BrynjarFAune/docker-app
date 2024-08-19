@@ -1,0 +1,11 @@
+C:\Users\brynjar.aune\Proj\other\notes-app\backend\target\debug\deps\libpear-cefb2b0aa95211d5.rmeta: C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\lib.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\macros.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\input.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\result.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\debug.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\combinators.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\parsers.rs
+
+C:\Users\brynjar.aune\Proj\other\notes-app\backend\target\debug\deps\pear-cefb2b0aa95211d5.d: C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\lib.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\macros.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\input.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\result.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\debug.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\combinators.rs C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\parsers.rs
+
+C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\lib.rs:
+C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\macros.rs:
+C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\input.rs:
+C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\result.rs:
+C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\debug.rs:
+C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\combinators.rs:
+C:\Users\brynjar.aune\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pear-0.1.5\src\parsers.rs:
