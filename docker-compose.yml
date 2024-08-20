@@ -2,6 +2,7 @@ services:
   backend:
     build:
       context: ./backend
+    container_name: backend
     ports:
       - "8000:8000"
     networks:
@@ -10,10 +11,14 @@ services:
   frontend:
     build:
       context: ./frontend
+    container_name: frontend
     ports:
       - "3000:3000"
     networks:
       - my-network
+    environment:
+      - VITE_BACKEND_URL=http://backend:8000/
 
 networks:
   my-network:
+    driver: bridge

@@ -31,7 +31,7 @@ async fn index() -> Json<Response> {
 #[launch]
 fn rocket() -> _ {
     let cors = CorsOptions {
-        allowed_origins: rocket_cors::AllowedOrigins::all(),
+        allowed_origins: AllowedOrigins::all(),
         ..Default::default()
     }
     .to_cors()

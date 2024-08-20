@@ -1,12 +1,17 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	let data: any = null;
+	interface Data {
+		message: String;
+	}
+	let data: Data;
 	let error: string | null = null;
+
+	const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000/';
 
 	onMount(async () => {
 		try {
-			const res = await fetch('http://backend:8000/');
+			const res = await fetch(`${backendUrl}`);
 			data = await res.json();
 			console.log(data);
 		} catch (err) {
@@ -29,8 +34,7 @@
 		<p class="err">{error}</p>
 	{:else if data}
 		<div>
-			<h1>Data</h1>
-			<pre>{JSON.stringify(data, null, 2)}</pre>
+			<p>{data.message}</p>
 		</div>
 	{:else}
 		<p>Loading...</p>
